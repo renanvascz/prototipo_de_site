@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+
+  <!-- Fonte Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">Prototipo de Site</div>
+  <div class="menu-toggle">☰</div>
+
+  <nav class="nav-center">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="serviços.html">Serviços</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="download.html">Download</a>
+  </nav>
+
+  <div class="account">
+    <a href="conta.html" class="conta">Criar Conta</a>
+    <a href="login.html" class="login">Login</a>
+  </div>
+</header>
+
+  <div class="wrapper">
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" required />
+          <label>Nome de Usuário</label>
+          <i class='bx bxs-user'></i>
+        </div>
+
+        <div class="input-box">
+          <input type="password" required />
+          <label>Senha</label>
+          <i class='bx bxs-lock-alt'></i>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+        <div class="logreg-link">
+          <p>Você não tem conta? <a href="#" class="register-link">Cadastrar</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sobre.css" />
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">Prototipo de Site</div>
+  <div class="menu-toggle">☰</div>
+
+  <nav class="nav-center">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="serviços.html">Serviços</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="download.html">Download</a>
+  </nav>
+
+  <div class="account">
+    <a href="conta.html" class="conta">Criar Conta</a>
+    <a href="login.html" class="login">Login</a>
+  </div>
+</header>
+
+<main class="sobre-container">
+  <section class="sobre-intro fade-in">
+    <h1>Sobre o Protótipo</h1>
+    <h2>Estrutura Base para Projetos Web Futuros</h2>
+
+    <p>
+      Este site foi desenvolvido como um modelo estrutural para futuros
+      projetos digitais, servindo como base para testes de layout,
+      organização visual, responsividade e boas práticas de desenvolvimento web.
+    </p>
+
+    <p>
+      O objetivo principal é criar uma fundação sólida que possa ser
+      adaptada para diferentes tipos de sistemas, portfólios,
+      aplicações empresariais ou plataformas institucionais.
+    </p>
+  </section>
+
+  <section class="sobre-section fade-in">
+    <h2>Propósito do Projeto</h2>
+    <p>
+      Este protótipo permite experimentar diferentes estruturas
+      de navegação, componentes visuais e organização de conteúdo,
+      facilitando a evolução para soluções mais completas e profissionais.
+    </p>
+  </section>
+
+  <section class="sobre-section fade-in">
+    <h2>Objetivos do Protótipo</h2>
+
+    <ul>
+      <li>Testar estrutura de navegação e menu responsivo.</li>
+      <li>Implementar efeitos visuais modernos como glassmorphism.</li>
+      <li>Aplicar boas práticas de HTML, CSS e organização de layout.</li>
+      <li>Servir como base para futuros sistemas e aplicações web.</li>
+    </ul>
+  </section>
+
+  <section class="sobre-section fade-in">
+    <h2>Próximos Passos</h2>
+
+    <ol>
+      <li><strong>Expansão:</strong> Adição de novas páginas e funcionalidades.</li>
+      <li><strong>Integração:</strong> Implementação de backend e banco de dados.</li>
+      <li><strong>Otimização:</strong> Melhorias de desempenho e SEO.</li>
+      <li><strong>Publicação:</strong> Deploy em ambiente de produção.</li>
+    </ol>
+  </section>
+
+  <section class="sobre-section fade-in">
+    <h2>Conclusão</h2>
+    <p>
+      Este projeto representa o ponto de partida para o desenvolvimento
+      de soluções digitais mais robustas, organizadas e escaláveis.
+    </p>
+  </section>
+</main>
+ 
+
+  <script>
+    // === Header dinâmico ===
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      navbar.classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    // === Efeito Fade-In ===
+    const faders = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    faders.forEach(fader => observer.observe(fader));
+  </script>
+</body>
+</html>

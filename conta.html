@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar a Conta</title>
+
+  <!-- Fonte Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="conta.css" />
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">Prototipo de Site</div>
+  <div class="menu-toggle">☰</div>
+
+  <nav class="nav-center">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="serviços.html">Serviços</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="download.html">Download</a>
+  </nav>
+
+  <div class="account">
+    <a href="conta.html" class="conta">Criar Conta</a>
+    <a href="login.html" class="login">Login</a>
+  </div>
+</header>
+
+  <div class="wrapper">
+    <div class="form-box register">
+      <h2>Criar Conta</h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" required />
+          <label>Nome</label>
+        </div>
+
+        <div class="input-box">
+          <input type="text" required />
+          <label>Sobrenome</label>
+        </div>
+
+        <div class="input-box">
+          <input type="email" placeholder=" " required />
+          <label>Email</label>
+        </div>
+
+        <div class="input-box">
+          <input type="tel" required />
+          <label>Telefone</label>
+        </div>
+
+        <div class="input-box">
+          <input type="password" required />
+          <label>Criar Senha</label>
+        </div>
+
+        <div class="input-box">
+          <input type="password" required />
+          <label>Confirmar Senha</label>
+        </div>
+
+        <button type="submit" class="btn">Cadastrar</button>
+
+        <div class="logreg-link">
+          <p>Já tem uma conta? <a href="login.html" class="login-link">Entrar</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
